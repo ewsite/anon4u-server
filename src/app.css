@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+	body {
+		font-family: 'Work Sans', sans-serif;
+		@apply 
+            text-slate-50;
+		background-image: url('/bgpattern.png')
+	}
+
+	a {
+		@apply cursor-pointer;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Syne', sans-serif;
+		@apply font-extrabold;
+	}
+
+	p {
+		@apply mb-4;
+	}
+
+	h1 {
+		@apply text-6xl;
+	}
+	h2 {
+		@apply text-5xl;
+	}
+	h3 {
+		@apply text-4xl;
+	}
+	h4 {
+		@apply text-3xl;
+	}
+	h5 {
+		@apply text-2xl;
+	}
+	h6 {
+		@apply text-xl;
+	}
+
+	b {
+		@apply font-semibold;
+	}
+
+	ul {
+		@apply list-disc ps-8;
+	}
+
+	ol {
+		@apply list-decimal ps-8;
+	}
+
+	article {
+		@apply space-y-4;
+	}
+}
