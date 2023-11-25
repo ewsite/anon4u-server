@@ -11,6 +11,7 @@ export async function POST({ request, url }) {
 
 	return json({
 		questionId: responseData.id,
-		link: `${url.protocol}//${url.hostname}/ehe/${responseData?.id}`
+		link: `https://answers4u.vercel.app/ehe/${responseData?.id}`,
+		// link: `${url.protocol}//${url.hostname}/ehe/${responseData?.id}`
 	});
 }
