@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>anon4u: a question from an anonymous person.</title>
+	<title>question hmmm</title>
 	<meta property="og:url" content={data.url} />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Hey, I have a question for you!" />
