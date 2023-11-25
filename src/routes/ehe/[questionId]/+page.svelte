@@ -14,8 +14,6 @@
 	<meta property="og:url" content={data.url} />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Hey, I have a question for you!" />
-	<meta property="og:description" content="Answer this question by clicking this link." />
-	<meta property="og:image" content="{data.baseUrl}/question-bgpattern.png" />
 </svelte:head>
 
 <div class="flex flex-col justify-between h-full space-y-4">
