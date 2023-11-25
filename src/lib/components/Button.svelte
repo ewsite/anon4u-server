@@ -7,7 +7,6 @@
 	export let preventDefault = false;
 	export let formaction = String();
 	export let disabled = false;
-
 </script>
 
 {#if type === 'link'}
@@ -54,8 +53,7 @@
 <style lang="postcss">
 	a,
 	button {
-		@apply
-        px-4
+		@apply px-4
         py-2
         rounded-full
         font-bold
@@ -104,5 +102,4 @@
 	.plain:not(.disabled) {
 		@apply bg-slate-950 bg-opacity-5;
 	}
-
 </style>

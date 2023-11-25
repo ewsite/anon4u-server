@@ -5,9 +5,8 @@
 @layer base {
 	body {
 		font-family: 'Work Sans', sans-serif;
-		@apply 
-            text-slate-50 overflow-hidden;
-		background-image: url('/bgpattern.png')
+		@apply text-slate-50 overflow-hidden;
+		background-image: url('/bgpattern.png');
 	}
 
 	a {

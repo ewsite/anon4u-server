@@ -17,8 +17,7 @@
 
 <style lang="postcss">
 	div {
-		@apply
-            container
+		@apply container
             flex
             mx-auto
             min-h-screen
