@@ -6,7 +6,7 @@
 	body {
 		font-family: 'Work Sans', sans-serif;
 		@apply 
-            text-slate-50;
+            text-slate-50 overflow-hidden;
 		background-image: url('/bgpattern.png')
 	}
 

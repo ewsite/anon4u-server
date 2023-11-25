@@ -57,7 +57,7 @@
 		@apply
         px-4
         py-2
-        rounded
+        rounded-full
         font-bold
         uppercase
         transition

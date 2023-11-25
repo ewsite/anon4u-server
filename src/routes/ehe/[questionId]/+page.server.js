@@ -1,5 +1,5 @@
 import { Database } from '$lib/Database';
-import { redirect } from '@sveltejs/kit';
+import { fail } from '@sveltejs/kit';
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ params }) {
     const questionData = await Database.questions.findUnique({
@@ -22,8 +22,14 @@ export const actions = {
             select: { id: true }
         })
 
-        if (result) {
-            throw redirect(301, '/thankyou');
+        if (!result?.id) {
+            return fail(400, {
+                success: false
+            })
+        }
+
+        return {
+            success: true
         }
     }
 };
