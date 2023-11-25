@@ -17,7 +17,7 @@
 </svelte:head>
 
 <div class="flex flex-col justify-between h-full space-y-4">
-	<h3 class="text-rose-600 shadow-lg">anon4u</h3>
+	<h3 class="text-rose-600 shadow-lg">Answer Portal</h3>
 	{#if data?.questionData}
 		{#key pendingQuestion || success}
 			<form
@@ -42,7 +42,7 @@
 				{#if pendingQuestion}
 					<div class="space-y-4 w-3/4">
 						<div class="flex flex-col space-y-4">
-							<b class="text-3xl bg-rose-600 p-2 rounded-md">Q: {data?.questionData?.question}?</b>
+							<b class="text-3xl bg-rose-600 p-2 rounded-md">?: {data?.questionData?.question}?</b>
 							<div class="flex space-x-4">
 								<b class="text-3xl">A:</b>
 								<div class="grow grid">
