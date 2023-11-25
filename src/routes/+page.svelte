@@ -7,8 +7,7 @@
 	<title>anon4u: an anonymous dm.</title>
 	<meta property="og:url" content={data.url} />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="anon4u: an anonymous dm." />
-	<meta property="og:description" content="Download anon4u for android (not available on iOS)." />
+	<meta property="og:title" content="an anonymous dm (more like q&a)." />
 </svelte:head>
 <div class="h-full flex items-center justify-center">
 	<div class="p-4">
