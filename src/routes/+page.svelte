@@ -9,7 +9,6 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="anon4u: an anonymous dm." />
 	<meta property="og:description" content="Download anon4u for android (not available on iOS)." />
-	<meta property="og:image" content="{data.baseUrl}/bgpattern.png" />
 </svelte:head>
 <div class="h-full flex items-center justify-center">
 	<div class="p-4">
