@@ -1,6 +1,6 @@
 # anon4u Server
 
-## What is anon4u
+## What is anon4u?
 
 anon4u is a dm (i mean q&a) app that you can ask your strangers for your own questions anonymously.
 
