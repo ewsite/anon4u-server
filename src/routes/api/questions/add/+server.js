@@ -11,7 +11,7 @@ export async function POST({ request, url }) {
 
 	return json({
 		questionId: responseData.id,
-		link: `${url.protocol}//plzanswer.vercel.app/question/${responseData?.id}`,
+		link: `${url.protocol}//plzanswer.vercel.app/response/${responseData?.id}`,
 		// link: `${url.protocol}//${url.hostname}/ehe/${responseData?.id}`,
 	});
 }
