@@ -1,5 +1,5 @@
 [{
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target" : { "namespace": "android_app", "package_name": "com.anon4u.app",
-                 "sha256_cert_fingerprints": ["E6:19:0C:23:7B:56:48:96:93:88:9E:BD:6D:04:53:72:61:9A:F5:14:36:E5:66:7D:F7:C1:AF:7B:C6:4B:21:2B"] }
+                 "sha256_cert_fingerprints": ["32:96:C6:12:F1:5A:29:14:8F:88:18:4D:FA:61:27:16:3F:2A:A4:9C:BF:F1:75:0A:45:6A:05:3C:20:62:B9:7D"] }
 }]
