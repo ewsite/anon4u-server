@@ -25,21 +25,13 @@
 	{/if}
 	<div>
 		{#if type === 'email'}
-			<input type="email" bind:value id={id || null} {name} {placeholder} {required} {disabled} />
+			<input type="email" bind:value id={id || null} {name} {placeholder} {required} {disabled}/>
 		{:else if type === 'password'}
-			<input
-				type="password"
-				bind:value
-				id={id || null}
-				{name}
-				{placeholder}
-				{required}
-				{disabled}
-			/>
+			<input type="password" bind:value id={id || null} {name} {placeholder} {required} {disabled}/>
 		{:else if type === 'number'}
-			<input type="number" bind:value id={id || null} {name} {placeholder} {required} {disabled} />
+			<input type="number" bind:value id={id || null} {name} {placeholder} {required} {disabled}/>
 		{:else}
-			<input type="text" bind:value id={id || null} {name} {placeholder} {required} {disabled} />
+			<input type="text" bind:value id={id || null} {name} {placeholder} {required} {disabled}/>
 		{/if}
 		{#if notes?.length}
 			<p class="notes">
@@ -50,14 +42,9 @@
 </div>
 
 <style lang="postcss">
-	span {
-		@apply space-y-2
-            max-w-full
-            w-full;
-	}
-
 	input {
 		@apply w-full
+			text-neutral-800
             px-2
             py-2
             grow

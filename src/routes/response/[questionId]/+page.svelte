@@ -17,7 +17,6 @@
 </svelte:head>
 
 <div class="flex flex-col justify-between h-full space-y-4">
-	<h3 class="text-rose-600 shadow-lg">Answer Portal</h3>
 	{#if data?.questionData}
 		{#key pendingQuestion || success}
 			<form
@@ -31,7 +30,6 @@
 					pendingQuestion = false;
 					return async ({ result }) => {
 						if (result.type == 'failure') {
-							console.log('Cow');
 							pendingQuestion = true;
 							return;
 						}
@@ -40,16 +38,15 @@
 				}}
 			>
 				{#if pendingQuestion}
-					<div class="space-y-4 w-3/4">
-						<div class="flex flex-col space-y-4">
-							<b class="text-3xl bg-rose-600 p-2 rounded-md">?: {data?.questionData?.question}?</b>
-							<div class="flex space-x-4">
-								<b class="text-3xl">A:</b>
-								<div class="grow grid">
-									<TextArea name="answer" bind:value={answer} />
-								</div>
+					<div class="h-full flex items-center justify-center transition-all w-full">
+						<div class="space-y-4 w-full">
+							<div class="flex flex-col space-y-4 p-4 rounded bg-slate-50">
+								<b class="p-1 bg-slate-50 text-rose-600">Message from anonymous!</b>
+								<hr>
+								<b class="bg-rose-600 rounded-md p-2">{data.questionData.question}</b>
+								<TextArea name="answer" bind:value={answer} placeholder="Reply..."/>
+								<Button type="submit" color="primary">SEND</Button>
 							</div>
-							<Button color="primary" type="submit">SEND</Button>
 						</div>
 					</div>
 				{:else if !pendingQuestion && !success}
@@ -57,19 +54,19 @@
 						<Loading></Loading>
 					</div>
 				{:else}
-					<div>
-						<h1 class="text-rose-600">Thank you!</h1>
+					<div class="space-y-4">
+						<h1 class="">Thank you!</h1>
+						<Button color="primary" type="link" href="https://anon4u.vercel.app">Download the app now!</Button>
 					</div>
 				{/if}
 			</form>
 		{/key}
 	{:else}
 		<div class="grow flex items-center justify-center">
-			<h1 class="text-rose-700">Question doesn't exists.</h1>
+			<h1 class="">Question doesn't exists.</h1>
 		</div>
 	{/if}
 
-	<a href="/">Back to Homepage</a>
 </div>
 
 <style lang="postcss"></style>
