@@ -56,7 +56,6 @@
 				{:else}
 					<div class="space-y-4">
 						<h1 class="">Thank you!</h1>
-						<Button color="primary" type="link" href="https://anon4u.vercel.app">Download the app now!</Button>
 					</div>
 				{/if}
 			</form>
